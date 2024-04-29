@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+main {
+  background-image: url("https://source.unsplash.com/1600x900/?weather");
+}
