@@ -25,9 +25,9 @@ export default function Home() {
   // }, [city])
 
   return (
-    <main className="flex min-h-screen flex-col justify-around items-center bg-center bg-cover bg-no-repeat" style={{ backgroundImage: "url(" + backgroundCity + ")" }}>
-      <h2 className="font-bold text-5xl backdrop-filter backdrop-blur-xl text-white p-4 rounded-lg drop-shadow-xl">Tempo nas cidades</h2>
-      <div className="flex flex-col gap-6 lg:flex-row justify-around items-center w-full">
+    <main className="flex min-h-screen flex-col justify-evenly items-center bg-center bg-cover bg-no-repeat" style={{ backgroundImage: "url(" + backgroundCity + ")" }}>
+      <h2 className="font-bold text-center text-5xl backdrop-filter backdrop-blur-xl text-white p-4 rounded-lg drop-shadow-xl">Tempo nas cidades</h2>
+      <div className="flex flex-col gap-4 lg:flex-row justify-around items-center w-full">
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row">
           <input className="w-96 py-2 px-3 rounded-lg border-none outline-none text-lg mb-1" type="text" placeholder="Digite o nome da cidade" value={city} onChange={(e) => setCity(e.target.value)} />
           <button className="bg-blue-500 text-white py-2 px-3 rounded-lg text-xl mb-1">Consultar</button>
