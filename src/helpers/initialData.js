@@ -1,6 +1,7 @@
 const initialData = {
     location: {
         name: '-',
+        region: '-',
         country: '-'
     },
     current: {
