@@ -13,10 +13,9 @@ export default function Home() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetchData(city).then(response => {
-      setData(response);
-      setCity("")
-    });
+    fetchData(city).then(response => (
+      setData(response)
+    ));
   }
 
   // useEffect((city) => {
