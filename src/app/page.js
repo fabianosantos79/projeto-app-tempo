@@ -1,6 +1,6 @@
 'use client';
 import Card from "@/components/Card";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import fetchData from "@/services/api";
 import initialData from "@/helpers/initialData";
 
@@ -9,21 +9,22 @@ export default function Home() {
   const [city, setCity] = useState("");
   const [data, setData] = useState(initialData);
 
-  let backgroundCity = `https://source.unsplash.com/1600x900/?${city}`;
+  let backgroundCity = `https://source.unsplash.com/1600x900/?${data.location.name}`;
 
   const handleSubmit = (e) => {
     e.preventDefault();
     fetchData(city).then(response => {
       setData(response);
+      setCity("")
     });
   }
 
   // useEffect((city) => {
   //   backgroundCity = `https://source.unsplash.com/1600x900/?${city}`;
-  // }, setCity)
+  // }, [city])
 
   return (
-    <main className="flex min-h-screen flex-col justify-around items-center" style={{ backgroundImage: "url(" + backgroundCity + ")" }}>
+    <main className="flex min-h-screen flex-col justify-around items-center bg-cover" style={{ backgroundImage: "url(" + backgroundCity + ")" }}>
       <h2 className="font-bold text-5xl backdrop-filter backdrop-blur-xl text-white p-4 rounded-lg drop-shadow-xl">Tempo nas cidades</h2>
       <div className="flex flex-row justify-around items-center w-full">
         <form onSubmit={handleSubmit}>
