@@ -13,7 +13,7 @@ export default function Home() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetchData(city).then(response => {
+    fetchData(city).then((response) => {
       setData(response)
       console.log(response)
       setCity("")
