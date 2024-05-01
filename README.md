@@ -1,4 +1,4 @@
-# ⚡️ Fakeflix
+# ⚡️ Temperatura das cidades
 
 Aplicação WEB que consome a API Wheather trazendo informações da temperatura de uma cidade e faz paralelamente o consumo da API Unsplash trazendo uma imagem com o termo pesquisado. O projeto foi desenvovido com Next Js, estilizado com Tailwind e está totalmente responsivo para acesso em qualquer dispositivo.
 
