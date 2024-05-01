@@ -22,7 +22,7 @@ Fiz o layout baseado nessas imagens que busquei no Google
 
 ## 🌐 Demonstração
 
-Abaixo a demonstração da aplicação já com o deploy na Vercel
+Abaixo a demonstração da aplicação em localhost
 
 ![App Screenshot](https://raw.githubusercontent.com/fabianosantos79/projeto-app-tempo/main/public/tempo_nas_cidades.gif)
 <br/><br/>
@@ -39,7 +39,7 @@ Instale utilizando npm
 Rode com start
 
 ```bash
-  next start
+  npm run dev
 ```
 
 <br/>
