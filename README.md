@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ⚡️ Fakeflix
 
-## Getting Started
+Projeto simulando o frontend do Netflix, criei em React e estilizei com CSS Modules, os dados foram consumidos da API OMDB a aplicação faz uma nova requisição a cada atualização da página, trazendo novos dados, existe um efeito ao passar o mouse nas imagens dos filmes e ao clicar é aberto um card com mais informações sobre o título.
 
-First, run the development server:
+[![Link do Lab](https://img.shields.io/badge/▶-000?style=for-the-badge&logo=movie&logoColor=E94D5F)](https://clone-netflix-ashy.vercel.app/)
+[![Link do Lab](https://img.shields.io/badge/Acesse%20o%20Projeto%20na%20Web-F4181C?style=for-the-badge)](https://clone-netflix-ashy.vercel.app/)
+<br/><br/>
+
+
+## 🎯 Layout
+
+Fiz o layout baseado nessa imagem que retirei do Pinterest
+
+![App Referencia](https://raw.githubusercontent.com/fabianosantos79/clone-netflix/master/public/referencia.png)
+<br/>
+
+## 🛠 Funcionalidades
+
+- Consulta de API oficial
+- Exibição por categoria
+- Modal com mais informações
+- Layout Responsivo
+
+  
+
+## 🌐 Demonstração
+
+Abaixo a demonstração da aplicação já com o deploy na Vercel
+
+![App Screenshot](https://raw.githubusercontent.com/fabianosantos79/clone-netflix/master/public/fakeflix.gif)
+<br/><br/>
+
+
+## 🚀 Instalação
+
+Instale utilizando npm
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  npm install my-project
+  cd my-project
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Rode com start
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+  npm start
+```
+<br/>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## 🔗Stacks utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+**✨Frontend**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![NPM](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+<br/>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**🔨Backend**
 
-## Deploy on Vercel
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white) ![JSON](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)
+<br/>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**☁️Deploy**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
