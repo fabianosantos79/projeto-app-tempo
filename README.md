@@ -1,11 +1,10 @@
 # ⚡️ Fakeflix
 
-Projeto simulando o frontend do Netflix, criei em React e estilizei com CSS Modules, os dados foram consumidos da API OMDB a aplicação faz uma nova requisição a cada atualização da página, trazendo novos dados, existe um efeito ao passar o mouse nas imagens dos filmes e ao clicar é aberto um card com mais informações sobre o título.
+Aplicação WEB que consome a API Wheather trazendo informações da temperatura de uma cidade e faz paralelamente o consumo da API Unsplash trazendo uma imagem com o termo pesquisado. O projeto foi desenvovido com Next Js, estilizado com Tailwind e está totalmente responsivo para acesso em qualquer dispositivo.
 
 [![Link do Lab](https://img.shields.io/badge/▶-000?style=for-the-badge&logo=movie&logoColor=E94D5F)](https://clone-netflix-ashy.vercel.app/)
 [![Link do Lab](https://img.shields.io/badge/Acesse%20o%20Projeto%20na%20Web-F4181C?style=for-the-badge)](https://clone-netflix-ashy.vercel.app/)
 <br/><br/>
-
 
 ## 🎯 Layout
 
@@ -21,15 +20,12 @@ Fiz o layout baseado nessa imagem que retirei do Pinterest
 - Modal com mais informações
 - Layout Responsivo
 
-  
-
 ## 🌐 Demonstração
 
 Abaixo a demonstração da aplicação já com o deploy na Vercel
 
 ![App Screenshot](https://raw.githubusercontent.com/fabianosantos79/clone-netflix/master/public/fakeflix.gif)
 <br/><br/>
-
 
 ## 🚀 Instalação
 
@@ -45,8 +41,8 @@ Rode com start
 ```bash
   npm start
 ```
-<br/>
 
+<br/>
 
 ## 🔗Stacks utilizadas
 
