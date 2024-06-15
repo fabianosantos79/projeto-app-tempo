@@ -18,12 +18,10 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-image: url("https://img.odcdn.com.br/wp-content/uploads/2023/01/por-que-ceu-azul.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @layer utilities {
@@ -33,5 +31,5 @@ body {
 }
 
 main {
-  background-image: url("https://source.unsplash.com/1600x900/?weather");
+  background-image: url("https://agron.com.br/wp-content/uploads/2023/07/32-1.jpg");
 }
