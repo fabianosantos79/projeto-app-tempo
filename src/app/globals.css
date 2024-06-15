@@ -18,7 +18,8 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-image: url("https://img.odcdn.com.br/wp-content/uploads/2023/01/por-que-ceu-azul.jpg");
+  background-color: darkslategrey;
+  /* background-image: url("https://img.odcdn.com.br/wp-content/uploads/2023/01/por-que-ceu-azul.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
