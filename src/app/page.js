@@ -8,8 +8,18 @@ export default function Home() {
 
   const [city, setCity] = useState("");
   const [data, setData] = useState(initialData);
+  const [imageCity, setImageCity] = useState("");
 
-  let backgroundCity = `https://source.unsplash.com/1600x900/?${data.location.name}`;
+
+  const fecthImage = async () => {
+    const backgroundCity = `https://api.unsplash.com/search/photos?query=${city}&page=1&per_page=1&client_id=EdHwWZ9Led9w-i3PXhfOd1cA1aXLxjTuRUOAgVFzAgQ`;
+
+    const response = await fetch(backgroundCity);
+    const data = await response.json();
+    const locationCity = data.results[0].urls.full;
+    console.log(locationCity);
+    setImageCity(locationCity);
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,15 +27,13 @@ export default function Home() {
       setData(response)
       console.log(response)
       setCity("")
+      fecthImage();
     });
   }
 
-  // useEffect((city) => {
-  //   backgroundCity = `https://source.unsplash.com/1600x900/?${city}`;
-  // }, [city])
 
   return (
-    <main className="flex min-h-screen flex-col justify-evenly items-center bg-center bg-cover bg-no-repeat" style={{ backgroundImage: "url(" + backgroundCity + ")" }}>
+    <main className="flex min-h-screen flex-col justify-evenly items-center bg-center bg-cover bg-no-repeat" style={{ backgroundImage: "url(" + imageCity + ")" }}>
       <h2 className="font-bold text-center text-5xl backdrop-filter backdrop-blur-xl text-white p-4 rounded-lg drop-shadow-xl">Tempo nas cidades</h2>
       <div className="flex flex-col gap-4 lg:flex-row justify-around items-center w-full">
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-1">
